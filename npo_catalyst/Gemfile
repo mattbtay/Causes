@@ -14,6 +14,7 @@ gem "omniauth-twitter"
 gem "fb_graph"
 gem "fog"
 gem "carrierwave"
+gem "heroku"
 
 # Use unicorn as the web server
 # gem 'unicorn'
