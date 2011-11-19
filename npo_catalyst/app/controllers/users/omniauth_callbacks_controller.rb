@@ -7,4 +7,5 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     else
       session["devise.facebook_data"] = request.env["omniauth.auth"]
     end
+  end
 end

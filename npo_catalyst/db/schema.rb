@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111119194635) do
+ActiveRecord::Schema.define(:version => 20111119210335) do
 
   create_table "causes", :force => true do |t|
     t.integer  "user_id",         :null => false
@@ -53,7 +53,7 @@ ActiveRecord::Schema.define(:version => 20111119194635) do
   end
 
   create_table "users", :force => true do |t|
-    t.string   "login",                                                 :null => false
+    t.string   "login"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "email",                                 :default => "", :null => false
