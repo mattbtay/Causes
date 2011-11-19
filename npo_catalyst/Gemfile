@@ -11,6 +11,7 @@ gem 'devise'
 #gem "oa-oauth", :require => "omniauth/oauth"
 gem "omniauth-facebook"
 gem "omniauth-twitter"
+gem "fb_graph"
 
 # Use unicorn as the web server
 # gem 'unicorn'
