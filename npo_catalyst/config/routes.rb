@@ -1,7 +1,6 @@
 NpoCatalyst::Application.routes.draw do
-  resources :users, :user_sessions, :organizations, :causes, :updates
-  match 'login' => 'user_sessions#new', :as => :login
-  match 'logout' => 'user_sessions#destroy', :as => :logout
+  resources :user_sessions, :organizations, :causes, :updates
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
-  match '/' => 'home#index'
+  root :to => 'home#index'
 end

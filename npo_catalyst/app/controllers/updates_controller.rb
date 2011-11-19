@@ -10,7 +10,7 @@ class UpdatesController < ApplicationController
 
 		if @update.save
 			#return success
-			respond_with @cause
+			respond_with @update
 		else
 			#return failure
 			render :text => 'Failed'
