@@ -10,7 +10,41 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111119152459) do
+ActiveRecord::Schema.define(:version => 20111119164917) do
+
+  create_table "causes", :force => true do |t|
+    t.integer  "user_id",         :null => false
+    t.integer  "organization_id", :null => false
+    t.string   "name",            :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "donations", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "cause_id"
+    t.decimal  "amount",     :precision => 8, :scale => 2
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "organizations", :force => true do |t|
+    t.string   "name",        :null => false
+    t.string   "url"
+    t.string   "phone"
+    t.string   "fax"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "updates", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "cause_id"
+    t.text     "update_text"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "user_sessions", :force => true do |t|
     t.datetime "created_at"

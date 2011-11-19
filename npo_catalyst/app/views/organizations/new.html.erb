@@ -1,0 +1,13 @@
+<% form_for @organization, :url => { :action => 'create' } do |f| %>
+	<p><%= f.label :name, "Name" %>
+  <%= f.text_field :name %></p>
+  <p><%= f.label :url, "Site URL" %>
+  <%= f.text_field :url %></p>
+  <p><%= f.label :phone, "Phone #" %>
+  <%= f.text_field :phone %></p>
+  <p><%= f.label :fax, "Fax #" %>
+  <%= f.text_field :fax %></p>
+  <p><%= f.label :description, "Description" %>
+  <%= f.text_area :description %></p>
+  <%= f.submit "Create" %>
+<% end %>

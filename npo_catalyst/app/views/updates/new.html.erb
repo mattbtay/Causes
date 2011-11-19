@@ -1,0 +1,9 @@
+<% form_for @update, :url => { :action => 'create' } do |f| %>
+  <p><%= f.label :user_id, "User ID" %>
+  <%= f.text_field :user_id %></p>
+  <p><%= f.label :cause_id, "Cause ID" %>
+  <%= f.text_field :cause_id %></p>
+  <p><%= f.label :update_text, "Update Text" %>
+  <%= f.text_area :update_text %></p>
+  <%= f.submit "Create" %>
+<% end %>

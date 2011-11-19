@@ -1,0 +1,9 @@
+<% form_for @cause, :url => { :action => 'create' } do |f| %>
+  <p><%= f.label :user_id, "User ID" %>
+  <%= f.text_field :user_id %></p>
+  <p><%= f.label :organization_id, "Organization ID" %>
+  <%= f.text_field :organization_id %></p>
+  <p><%= f.label :name, "Name" %>
+  <%= f.text_field :name %></p>
+  <%= f.submit "Create" %>
+<% end %>
