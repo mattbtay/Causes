@@ -12,6 +12,8 @@ gem 'devise'
 gem "omniauth-facebook"
 gem "omniauth-twitter"
 gem "fb_graph"
+gem "fog"
+gem "carrierwave"
 
 # Use unicorn as the web server
 # gem 'unicorn'

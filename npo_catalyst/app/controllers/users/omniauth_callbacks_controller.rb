@@ -5,10 +5,9 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     if @user.persisted?
       #success
       omniauth = request.env["omniauth.auth"]
-      render :text => omniauth.info.image
-      #fb_user = FbGraph::User.new('me', :access_token => session[:omniauth]["credentials"]["token"])
-      #fb_user.fetch
-      #render :text => fb_user.name
+      @user.remote_avatar_url = omniauth.info.image
+      @user.save!
+      render :text => @user.avatar.url
     else
       session["devise.facebook_data"] = request.env["omniauth.auth"]
     end
