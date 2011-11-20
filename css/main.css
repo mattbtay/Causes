@@ -3,6 +3,54 @@ body {
 	background:url('../images/bg.png') left top repeat;
 }
 
+/* ===== home page ===== */
+
+.homeBox {
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border-radius:6px;
+	background:rgba(0,0,0,.5);
+	height:250px;
+}
+
+#homeContent p {
+	font-size:18px;
+	margin-top:15px;
+	line-height:24px;
+	opacity:.7;
+}
+
+	/* Home Search */
+
+#homeSearch {
+	margin-bottom:15px;
+}
+
+#homeSearch input[type="text"] {
+	font-size:40px;
+	color:rgba(0,0,0,.5);
+	width:75%;
+	height:50px;
+	line-height:60px;
+	-webkit-border-radius:12px;
+	-moz-border-radius:12px;
+	border-radius:12px;
+	margin-top:8px;
+
+	
+}
+
+#homeSearch input[type="submit"] {
+	font-size:40px;
+	padding:15px 30px;
+	-webkit-border-radius:12px;
+	-moz-border-radius:12px;
+	border-radius:12px;
+
+	
+	
+}
+
 /* ==== Cause Profile ======= */
 
 #causeProfilePic {
@@ -99,7 +147,19 @@ body {
 			}
 
 /* ======== Donate Page ========= */
+.input-file-tp {
+	background:none!important;
+}
 
+fieldset.ccInfo {
+	border:solid 1px black;
+}
+
+.input-donate {
+	border:1px solid red;
+	color:red;
+	font-weight:bold;
+}
 	
 		/* new clearfix */
 		.group:after {

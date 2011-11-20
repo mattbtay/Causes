@@ -15,11 +15,11 @@
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <style type="text/css">
+    <!-- <style type="text/css">
       body {
         padding-top: 60px;
       }
-    </style>
+    </style> -->
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -29,8 +29,27 @@
   </head>
 
   <body>
+	
+	<div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="#">Frogs for the Cure Cause.ly</a>
+          <ul class="nav">
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-    <div class="container-fluid">
+    <div class="container">
+	
+		<div class="row">
+			<div id="siteLogo" class="span16">
+				<img src="#" />
+			</div>
+		 </div>
 
 
       <!-- Example row of columns -->
@@ -42,33 +61,83 @@
 		
 		<div class="span13">
 			<div class="clearfix">
-				<form>
+				<form id="donationBox">
 					<fieldset>
 						<legend>Donate to Frogs for the Cure.</legend>
 				<div class="clearfix">
 					<label for="xlInput">Name</label>
 				<div class="input">
-					<input class="xlarge" id="xlInput" name="xlInput" size="30" type="text"/>
+					<input class="xlarge" id="xlInput" name="xlInput" size="30" type="text" placeholder="John Smith"/>
 				</div>
 				
 				<div class="clearfix">
 					<label for="xlInput">Address</label>
 				<div class="input">
-					<input class="xlarge" id="xlInput" name="xlInput" size="30" type="text"/>
+					<input class="xlarge" id="xlInput" name="xlInput" size="30" type="text" placeholder="123 Apple St."/>
 				</div>
 				
 				<div class="clearfix">
-					<label for="xlInput">Name</label>
+					<label for="xlInput">City</label>
 				<div class="input">
-					<input class="xlarge" id="xlInput" name="xlInput" size="30" type="text"/>
+					<input class="xlarge" id="xlInput" name="xlInput" size="30" type="text" placeholder="TX"/>
 				</div>
 				
 				<div class="clearfix">
-					<label for="textarea">Textarea</label>
+					<label for="xlInput">State</label>
+				<div class="input">
+					<input class="mini" id="xlInput" name="xlInput" size="30" type="text" placeholder="75461"/>
+				</div>
+				
+				<div class="clearfix">
+					<label for="xlInput">Zip</label>
+				<div class="input">
+					<input class="mini" id="xlInput" name="xlInput" size="30" type="text"/>
+				</div>
+				
+					
+						<div class="clearfix">
+							<label for="xlInput">Credit Card Number</label>
 						<div class="input">
-							<textarea class="xxlarge" id="textarea2" name="textarea2" rows="3"></textarea>
+							<input class="mini" id="xlInput" name="xlInput" size="30" type="text" placeholder="1234"/>
+							<input class="mini" id="xlInput" name="xlInput" size="30" type="text" placeholder="4567"/>
+							<input class="mini" id="xlInput" name="xlInput" size="30" type="text" placeholder="4567"/>
+							<input class="mini" id="xlInput" name="xlInput" size="30" type="text" placeholder="2798"/>
+						</div>
+						
+						<div class="clearfix">
+							<label for="xlInput">CCV</label>
+						<div class="input">
+							<input class="mini" id="xlInput" name="xlInput" size="30" type="text" placeholder="123"/>
+						</div>
+						
+						<div class="clearfix">
+							<label for="xlInput">Exp</label>
+						<div class="input">
+							<input class="mini" id="xlInput" name="xlInput" size="30" type="text" placeholder="MM"/>
+							<input class="mini" id="xlInput" name="xlInput" size="30" type="text" placeholder="YYYY"/>
+						</div>
+						
+						<div class="clearfix">
+							<label for="xlInput">Donation</label>
+						<div class="input">
+							<input class="mini input-donate" id="xlInput" name="xlInput" size="30" type="text" placeholder="123"/>
+						</div>
+						
+					
+				
+				<div class="clearfix">
+					<label for="textarea">Testimonial</label>
+						<div class="input">
+							<textarea class="xxlarge" id="textarea2" name="textarea2" rows="3" placeholder="Tell us your story!"></textarea>
 								<span class="help-block">Leave your thoughts on this cause.</span>
 						</div>
+				</div>
+				
+				<div class="clearfix">
+				<label for="fileInput">Video Upload</label>
+				<div class="input">
+				<input class="input-file-tp" id="fileInput" name="fileInput" type="file"/>
+				</div>
 				</div>
 				
 				
