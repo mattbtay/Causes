@@ -6,12 +6,66 @@ body {
 /* ===== home page ===== */
 
 .homeBox {
-	-webkit-border-radius:6px;
-	-moz-border-radius:6px;
-	border-radius:6px;
-	background:rgba(0,0,0,.5);
+	-webkit-border-radius:12px;
+	-moz-border-radius:12px;
+	border-radius:12px;
+	background-color: #9e7f65;
+	  background-image: -webkit-gradient(linear, left top, left bottom, from(#9e7f65), to(#6e5641)); /* Saf4+, Chrome */
+	  background-image: -webkit-linear-gradient(top, #9e7f65, #6e5641); /* Chrome 10+, Saf5.1+, iOS 5+ */
+	  background-image:    -moz-linear-gradient(top, #9e7f65, #6e5641); /* FF3.6 */
+	  background-image:     -ms-linear-gradient(top, #9e7f65, #6e5641); /* IE10 */
+	  background-image:      -o-linear-gradient(top, #9e7f65, #6e5641); /* Opera 11.10+ */
+	  background-image:         linear-gradient(top, #9e7f65, #6e5641);
+	            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#9e7f65', EndColorStr='#6e5641'); /* IE6-IE9 */
 	height:250px;
+	-moz-box-shadow:2px 2px 4px rgba(0,0,0,.8);
+	-webkit-box-shadow:2px 2px 4px rgba(0,0,0,.8);
+	box-shadow:2px 2px 4px rgba(0,0,0,.8);
 }
+
+	.homeBox p {
+		color:#fff;
+		font-size:18px;
+		padding:10px 0;
+		background:rgba(0,0,0,.5);
+		padding-left:15px;
+		position:relative;
+			top:150px;
+		text-shadow:1px 1px 1px #000;
+		font-weight:bold;
+		font-style:italic;
+		letter-spacing:.125em;
+	}
+
+	 .innerLeft {
+		background:url('../images/cw.jpg') center top;
+		margin:10px;
+		-webkit-border-radius:12px;
+		-moz-border-radius:12px;
+		border-radius:12px;
+		height:230px;
+		
+	}
+	
+	.homeBox .innerMid {
+		background:url('../images/redcross.jpg');
+		margin:10px;
+		-webkit-border-radius:12px;
+		-moz-border-radius:12px;
+		border-radius:12px;
+		height:230px;
+		
+	}
+	
+	.homeBox .innerRight {
+		background:url('../images/tcu.jpg');
+		margin:10px;
+		-webkit-border-radius:12px;
+		-moz-border-radius:12px;
+		border-radius:12px;
+		height:230px;
+		
+	}
 
 #homeContent p {
 	font-size:18px;
@@ -20,10 +74,17 @@ body {
 	opacity:.7;
 }
 
+	/* register button */
+	
+a#registerBtn {
+	font-size:18px;
+	margin-bottom:25px;
+}
+
 	/* Home Search */
 
 #homeSearch {
-	margin-bottom:15px;
+	margin-bottom:25px;
 }
 
 #homeSearch input[type="text"] {
@@ -92,9 +153,8 @@ body {
 #causeStream { 
 	
 	margin-top:25px;
-	border:solid 2px black;
+	
 	padding:15px;
-	background:rgba(0,0,0,.3);
 }
 
 	.streamComment {
