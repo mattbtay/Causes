@@ -276,6 +276,11 @@ footer ul.socialLinks {}
 				footer ul.footLinks li a:hover {
 					opacity:.4;
 				}
+				
+			img.causeLogo {
+				position:relative;
+					top:10px;
+			}	
 	
 .copyright {
 	opacity:.7;
